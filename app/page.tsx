@@ -2,32 +2,32 @@ import { UsernameForm } from "@/components/UsernameForm";
 
 const FEATURES: { icon: string; title: string; body: string }[] = [
   {
-    icon: "🧠",
+ 
     title: "Skills, inferred",
     body: "Detects frameworks, tools and domains from your repo topics, descriptions and language mix — not a list you type by hand.",
   },
   {
-    icon: "📊",
+
     title: "Language breakdown",
     body: "Aggregates real byte-counts across your repositories into a weighted language profile.",
   },
   {
-    icon: "🔥",
+
     title: "Most active projects",
     body: "Ranks what you actually work on using a recency-weighted activity score, not just star counts.",
   },
   {
-    icon: "🟩",
+
     title: "Contribution graph",
     body: "Your full year of contribution activity, rendered right into the profile.",
   },
   {
-    icon: "✅",
+
     title: "Project quality signals",
     body: "Scores each project on docs, license, demo, traction and maintenance — a health check per repo.",
   },
   {
-    icon: "🔗",
+
     title: "Shareable profile",
     body: "Every profile lives at its own URL. Switch to the interactive CV and export it as a PDF.",
   },
