@@ -70,7 +70,7 @@ function PortfolioView({ data }: { data: Portfolio }) {
 function CVView({ data }: { data: Portfolio }) {
   const { user, stats } = data;
   return (
-    <div className="card mx-auto max-w-3xl p-8">
+    <div className="card mx-auto max-w-3xl p-5 sm:p-8">
       <header className="border-b border-border pb-4">
         <h2 className="text-2xl font-bold">{user.name ?? user.login}</h2>
         <p className="text-muted">

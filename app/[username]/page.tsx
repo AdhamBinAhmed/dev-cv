@@ -69,7 +69,7 @@ export default async function ProfilePage({ params }: Props) {
     <main className="min-h-screen">
       <div className="glow border-b border-border">
         <div className="mx-auto max-w-6xl px-5 py-8">
-          <div className="no-print mb-6 flex items-center justify-between">
+          <div className="no-print mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <Link href="/" className="text-sm text-muted hover:text-foreground">
               ← DevFolio
             </Link>
