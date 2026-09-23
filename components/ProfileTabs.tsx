@@ -29,7 +29,7 @@ function Section({
 
 function PortfolioView({ data }: { data: Portfolio }) {
   return (
-    <div className="grid gap-5 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
       <Section title="Skills">
         <SkillsCloud skills={data.skills} />
       </Section>
@@ -46,7 +46,7 @@ function PortfolioView({ data }: { data: Portfolio }) {
 
       <div className="lg:col-span-2">
         <Section title="Top projects">
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {data.topProjects.map((p) => (
               <ProjectCard key={p.repo.id} project={p} />
             ))}
@@ -56,7 +56,7 @@ function PortfolioView({ data }: { data: Portfolio }) {
 
       <div className="lg:col-span-2">
         <Section title="Most active projects">
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {data.mostActive.map((p) => (
               <ProjectCard key={p.repo.id} project={p} />
             ))}
