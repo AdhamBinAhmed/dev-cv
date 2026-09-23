@@ -76,7 +76,6 @@ export default function Home() {
         <div className="mt-20 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f) => (
             <div key={f.title} className="card p-5">
-              <div className="text-2xl">{f.icon}</div>
               <h3 className="mt-3 font-semibold">{f.title}</h3>
               <p className="mt-1.5 text-sm text-muted">{f.body}</p>
             </div>
