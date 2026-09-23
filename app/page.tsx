@@ -63,7 +63,7 @@ export default function Home() {
                 >
                   {u}
                 </a>
-              )}
+              }
             </div>
           </div>
         </header>
