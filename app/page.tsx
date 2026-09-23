@@ -1,6 +1,6 @@
 import { UsernameForm } from "@/components/UsernameForm";
 
-const FEATURES: { icon: string; title: string; body: string }[] = [
+const FEATURES: { title: string; body: string }[] = [
   {
  
     title: "Skills, inferred",
