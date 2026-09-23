@@ -38,35 +38,29 @@ export default function Home() {
   return (
     <main className="glow min-h-screen">
       <div className="mx-auto max-w-5xl px-5 py-16 sm:py-24">
-        <header className="text-center">
-          <span className="inline-block rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
-            Developer Portfolio Generator
-          </span>
-          <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-            Turn a GitHub account into a{" "}
-            <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent">
-              living portfolio
-            </span>
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-muted">
-            Connect a GitHub username and instantly get an analyzed portfolio,
-            an interactive CV, and a shareable developer profile — skills,
-            languages, top projects, contributions and quality signals, all
-            derived automatically.
-          </p>
+       <header className="text-center">
+  <span className="inline-block rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
+    Developer Portfolio Generator
+  </span>
 
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <UsernameForm />
-            <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-muted">
-              <span>Try:</span>
-                  className="rounded-md border border-border bg-surface px-2 py-0.5 hover:border-accent/50 hover:text-foreground"
-                >
-                  {u}
-                </a>
-              }
-            </div>
-          </div>
-        </header>
+  <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
+    Turn a GitHub account into{" "}
+    <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent">
+      a living portfolio
+    </span>
+  </h1>
+
+  <p className="mx-auto mt-4 max-w-xl text-muted">
+    Connect a GitHub username and instantly get an analyzed portfolio,
+    an interactive CV, and a shareable developer profile — skills,
+    languages, top projects, contributions and quality signals, all
+    derived automatically.
+  </p>
+
+  <div className="mt-8 flex flex-col items-center gap-3">
+    <UsernameForm />
+  </div>
+</header>
 
         <div className="mt-20 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f) => (
