@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0b0f;
+  --surface: #12141c;
+  --surface-2: #191c26;
+  --border: #262a36;
+  --foreground: #e7e9ee;
+  --muted: #9aa0ac;
+  --accent: #7c6cff;
+  --accent-2: #22d3ee;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.glow {
+  background:
+    radial-gradient(60rem 40rem at 20% -10%, color-mix(in oklab, var(--accent) 22%, transparent), transparent),
+    radial-gradient(50rem 40rem at 90% 0%, color-mix(in oklab, var(--accent-2) 14%, transparent), transparent);
+}
+
+@media print {
+  /* Preserve all background/gradient colors when printing. */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  /* Hide the footer logo in print; keep the navbar logo (once, on page 1). */
+  footer {
+    display: none !important;
+  }
+  /* Start this section on a fresh page (Contribution activity → page 2). */
+  .cv-page-break {
+    break-before: page;
+  }
+}
