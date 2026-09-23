@@ -19,12 +19,12 @@ export function LanguageBar({ languages }: { languages: LanguageStat[] }) {
       </div>
       <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3">
         {top.map((l) => (
-          <li key={l.name} className="flex items-center gap-2 text-sm">
+          <li key={l.name} className="flex min-w-0 items-center gap-2 text-sm">
             <span
               className="h-2.5 w-2.5 shrink-0 rounded-full"
               style={{ background: l.color }}
             />
-            <span className="text-foreground">{l.name}</span>
+            <span className="truncate text-foreground">{l.name}</span>
             <span className="ml-auto tabular-nums text-muted">
               {l.percent.toFixed(1)}%
             </span>

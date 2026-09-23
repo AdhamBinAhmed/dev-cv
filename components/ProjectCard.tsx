@@ -29,11 +29,11 @@ export function ProjectCard({ project }: { project: AnalyzedProject }) {
             href={repo.html_url}
             target="_blank"
             rel="noreferrer"
-            className="truncate font-semibold text-foreground hover:text-accent-2"
+            className="block truncate font-semibold text-foreground hover:text-accent-2"
           >
             {repo.name}
           </a>
-          <p className="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted">
+          <p className="mt-1 line-clamp-2 min-h-[2.5rem] break-words text-sm text-muted">
             {repo.description ?? "No description provided."}
           </p>
         </div>
@@ -69,7 +69,7 @@ export function ProjectCard({ project }: { project: AnalyzedProject }) {
           {repo.topics.slice(0, 5).map((t) => (
             <span
               key={t}
-              className="rounded-md bg-surface-2 px-2 py-0.5 text-[11px] text-muted"
+              className="max-w-full truncate rounded-md bg-surface-2 px-2 py-0.5 text-[11px] text-muted"
             >
               {t}
             </span>
