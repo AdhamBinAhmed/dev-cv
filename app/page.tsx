@@ -33,7 +33,6 @@ const FEATURES: { title: string; body: string }[] = [
   },
 ];
 
-const EXAMPLES = ["torvalds", "gaearon", "sindresorhus", "yyx990803"];
 
 export default function Home() {
   return (
