@@ -59,10 +59,6 @@ export default function Home() {
             <UsernameForm />
             <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-muted">
               <span>Try:</span>
-              {EXAMPLES.map((u) => (
-                <a
-                  key={u}
-                  href={`/${u}`}
                   className="rounded-md border border-border bg-surface px-2 py-0.5 hover:border-accent/50 hover:text-foreground"
                 >
                   {u}
