@@ -21,13 +21,13 @@ export function ShareBar({ username }: { username: string }) {
         onClick={copyLink}
         className="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-sm font-medium transition-colors hover:border-accent/50"
       >
-        {copied ? "✓ Link copied" : " Copy profile link"}
+        {copied ? " Link copied" : " Copy profile link"}
       </button>
       <button
         onClick={() => window.print()}
         className="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-sm font-medium transition-colors hover:border-accent/50"
       >
-        ⬇ Save CV as PDF
+         Save CV as PDF
       </button>
       <a
         href={`https://github.com/${username}`}
